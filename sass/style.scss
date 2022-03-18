@@ -1,0 +1,182 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Nunito Sans", sans-serif;
+    z-index: -99;
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    font-family: "Josefin Sans", sans-serif;
+    z-index: 0;
+    h1 {
+        font-size: 1.7rem;
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 8px #1d1c1c;
+        span {
+            color: rgb(71, 105, 3);
+        }
+    }
+    ul {
+        li {
+            list-style: none;
+            a {
+                font-size: 1.5rem;
+                padding: 5px;
+                color: rgb(226, 223, 223);
+                text-shadow: 3px 3px 5px #080808;
+                text-decoration: none;
+                transition: color .5s;
+            }
+            a:hover{
+                color: #9120ad;
+                text-shadow: 3px 3px 5px rgb(62, 122, 77);
+                text-decoration:underline;
+            }
+        }
+    }
+}
+.hero {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    box-shadow: 0px 1px 14px #08e1ae ;
+    .shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #1d886f28;
+    }
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    .icons-b-nav {
+        font-size: 2rem;
+        padding: 15px;
+        border-radius: 50%;
+        color: #08e1ae;
+        background-color: #fff;
+        box-shadow: -1px -1px 5px white;
+        transition: color .4s;
+        cursor: pointer;
+    }
+    .icons-b-nav:hover{
+        color: #9120ad;
+    }
+}
+.main-pictures{
+    height: 100vh;
+    background-color: rgb(247, 247, 201);
+}
+.text-pictures{
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 5px rgb(74, 80, 62);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 13px;
+}
+.text-pictures::first-letter{
+    color: #08e150;
+    text-shadow: 4px 4px 8px rgb(34, 34, 32);
+    font-size: 34px;
+}
+.pictures{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    .img{
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 10px;
+    }
+    .p1{
+        background-image: url(../img/275527009_708108843524114_7580503554046197420_n.jpg);
+    }
+    .p2{
+        background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+    }
+    .p3{
+        background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+    }
+    
+}
+.conteiner{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 0;
+    .v1{
+        height: 100px;
+        width: 28vw;
+    }
+}
+.yt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.fn{
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/fn.png);
+    z-index: 0;
+}
+.fn::after{
+    content: ' ';
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 19px;
+    transform: rotate(10deg);
+    height: 80px;
+    width: 200px;
+    background-image: url(../img/blyszczaca-zlota-korona-odizolowywajaca-na-bialym-tle-700-105361934-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.body-help{
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/26/13/32/butterfly-354528_1280.jpg);
+}

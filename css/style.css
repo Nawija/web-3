@@ -1,0 +1,243 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito Sans", sans-serif;
+  z-index: -99;
+}
+
+nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 0;
+}
+
+nav h1 {
+  font-size: 1.7rem;
+  color: black;
+  text-shadow: 3px 3px 8px #1d1c1c;
+}
+
+nav h1 span {
+  color: #476903;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: #e2dfdf;
+  text-shadow: 3px 3px 5px #080808;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+nav ul li a:hover {
+  color: #9120ad;
+  text-shadow: 3px 3px 5px #3e7a4d;
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  -webkit-box-shadow: 0px 1px 14px #08e1ae;
+          box-shadow: 0px 1px 14px #08e1ae;
+}
+
+.hero .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1d886f28;
+}
+
+.bottom-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+}
+
+.bottom-nav .icons-b-nav {
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  color: #08e1ae;
+  background-color: #fff;
+  -webkit-box-shadow: -1px -1px 5px white;
+          box-shadow: -1px -1px 5px white;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+  cursor: pointer;
+}
+
+.bottom-nav .icons-b-nav:hover {
+  color: #9120ad;
+}
+
+.main-pictures {
+  height: 100vh;
+  background-color: #f7f7c9;
+}
+
+.text-pictures {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 3px 3px 5px #4a503e;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 13px;
+}
+
+.text-pictures::first-letter {
+  color: #08e150;
+  text-shadow: 4px 4px 8px #222220;
+  font-size: 34px;
+}
+
+.pictures {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pictures .img {
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.pictures .p1 {
+  background-image: url(../img/275527009_708108843524114_7580503554046197420_n.jpg);
+}
+
+.pictures .p2 {
+  background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+}
+
+.pictures .p3 {
+  background-image: url(../img/275289807_949480112401967_6937634418655803691_n.png);
+}
+
+.conteiner {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 0;
+}
+
+.conteiner .v1 {
+  height: 100px;
+  width: 28vw;
+}
+
+.yt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.fn {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/fn.png);
+  z-index: 0;
+}
+
+.fn::after {
+  content: ' ';
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 19px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  height: 80px;
+  width: 200px;
+  background-image: url(../img/blyszczaca-zlota-korona-odizolowywajaca-na-bialym-tle-700-105361934-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.body-help {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://cdn.pixabay.com/photo/2014/05/26/13/32/butterfly-354528_1280.jpg);
+}
+/*# sourceMappingURL=style.css.map */
